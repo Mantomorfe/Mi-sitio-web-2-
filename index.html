@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Wildlife - Fundación para la Fauna</title>
+    <!-- Incluir Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Incluir CSS Interno -->
+    <style>
+        /* CSS Interno */
+        body {
+            padding-top: 56px;
+            background-color: #f9f9f9;
+        }
+        .navbar {
+            background-color: #a3c2c2;
+        }
+        .navbar-brand {
+            color: #ffffff !important;
+        }
+        .navbar-brand img {
+            max-height: 40px; /* Ajusta el tamaño del logo según sea necesario */
+        }
+        .hero {
+            background: url('https://caracoltv.brightspotcdn.com/dims4/default/73efce1/2147483647/strip/false/crop/1000x716+0+0/resize/1200x859!/format/webp/quality/90/?url=https%3A%2F%2Fcaracol-brightspot.s3-us-west-2.amazonaws.com%2Fassets%2Flakalle%2Fosos_polares_vivirian_solo_hasta_el_2100_segun_estudio_-_foto_afp.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        .section {
+            padding: 60px 0;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .btn-custom {
+            background-color: #a3c2c2;
+            color: white;
+        }
+        .btn-custom:hover {
+            background-color: #8fa3a3;
+            color: white;
+        }
+        footer {
+            background-color: #a3c2c2;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navegación con Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#"><img src="https://drive.google.com/uc?id=TU_ID_DEL_ARCHIVO" alt="Safe Wildlife Logo"> Safe Wildlife</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#impacto">Impacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#soluciones">Soluciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section con Bootstrap -->
+    <header class="hero text-center">
+        <h1>Apoya la Conservación de la Fauna</h1>
+    </header>
+
+    <!-- Sección de Impacto con Bootstrap -->
+    <section id="impacto" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Impacto en Ecosistemas</h2>
+                    <p>El cambio climático está afectando gravemente a los ecosistemas y hábitats naturales. El aumento de temperaturas y los cambios en los patrones de precipitación están alterando los hábitats de muchas especies, forzándolas a migrar o adaptarse a nuevas condiciones.</p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Especies en Peligro</h2>
+                    <p>Muchas especies están en peligro debido al cambio climático. Los osos polares, por ejemplo, sufren debido a la reducción del hielo marino. Las aves migratorias también están viendo alterados sus patrones migratorios debido a cambios en el clima.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Soluciones con Bootstrap -->
+    <section id="soluciones" class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Medidas de Conservación</h2>
+                    <p>Para mitigar el impacto del cambio climático, es fundamental implementar medidas de conservación. Esto incluye la protección de hábitats naturales, la reducción de emisiones de gases de efecto invernadero, y la promoción de prácticas sostenibles.</p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Educación y Conciencia</h2>
+                    <p>La educación y la concienciación sobre el impacto del cambio climático en la fauna son cruciales para fomentar la acción colectiva y personal para combatir el cambio climático y proteger nuestras especies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto con Bootstrap -->
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2>¿Nos quieres apoyar?</h2>
+            <p>Para poder beneficiar a los animales que están en peligro, necesitamos tu ayuda. Completa el formulario a continuación para ponerte en contacto con nosotros.</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nombre <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Número de Teléfono <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="phone" placeholder="Tu número de teléfono" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje <span class="text-danger">*</span></label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Tu mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-custom">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer con Bootstrap -->
+    <footer>
+        <p>&copy; 2024 Safe Wildlife. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Incluir jQuery y Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
